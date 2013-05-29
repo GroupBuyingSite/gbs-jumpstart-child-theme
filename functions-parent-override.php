@@ -29,7 +29,7 @@ function lb_show_lightbox( $bool ) {
 
 add_filter( 'gb_lightbox_custom_css', 'modify_gb_lightbox_custom_css' );
 function modify_gb_lightbox_custom_css( $css ) {
-	$css .= '#gb_light_box { position: absolute; } #gb_lightbox_subscription_form { margin: 0; } #login_link_lightbox a { border: none; }';
+	$css .= 'body{ margin: auto; padding: auto; } #gb_light_box { position: absolute; } #gb_lightbox_subscription_form { margin: 0; } #login_link_lightbox a { border: none; }';
 	return $css;
 }
 
